@@ -21,7 +21,7 @@ object OrderFlow extends App{
    */
 
   //Source
-  // producer id, product sku, quantity
+  // customer id, product sku, quantity
   // get product data from service
   // create shipment every x products
   // get top customers
@@ -29,7 +29,7 @@ object OrderFlow extends App{
   // get market price
   // calculate total earnings
 
-  implicit val system = ActorSystem("QuickStart")
+  implicit val system = ActorSystem("troupe")
   implicit val materializer: Materializer = ActorMaterializer()
   implicit val ec = system.dispatcher
 

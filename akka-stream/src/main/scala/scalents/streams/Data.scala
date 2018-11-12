@@ -13,7 +13,7 @@ object Data {
 
   case class Product(sku: String, desc: String)
 
-  case class FullfillOrder(product: Product, producer: Customer, quantity: Int, unitPrice: BigDecimal){
+  case class FullfillOrder(product: Product, customer: Customer, quantity: Int, unitPrice: BigDecimal){
     def orderTotal: BigDecimal = quantity * unitPrice
   }
 
@@ -29,7 +29,7 @@ object FalsoDB {
   private val customers = List(
     Customer("a","House Atrevides"),
     Customer("b","House Harpoonen"),
-    Customer("c","House Orders")
+    Customer("c","House Cordero")
   )
 
   private val products = List(
